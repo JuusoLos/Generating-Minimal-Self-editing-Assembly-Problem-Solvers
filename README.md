@@ -9,7 +9,7 @@ A minimal implementation of an x86 assembly program that edits itself to
 solve a toy problem. In the implementation, a mutable instruction block restricted to mov
 instructions reads and modifies a memory state and calls a fixed append routine at the end
 of every generation. The fixed append routine selects operands based on the memory tape and adds a
-new mov instruction to the end of the mutable instruction block. Using evolutionary search, we
+new mov instruction to the end of the mutable instruction block. Using evolutionary search [1][2][3], we
 generate a dataset of initial instruction-block and memory-state configurations that solve a
 simple conditional selection task: copying one of two data values to the output depending
 on an input that's either 0 or 1. I call the generated self-editing assembly programs mössö.
@@ -18,6 +18,14 @@ In future work, mössö maybe could be scaled by training larger ML models on ge
 to generate more capable mössö, because ML systems often benefit from simpler training cases first.
 
 
+References:
+[1] Holland, J. H. Adaptation in Natural and Artificial Systems. Ann Arbor, MI: The University
+of Michigan Press, 1975.
+[2] Grefenstette, J. J. Genetic algorithms for changing environments. In Parallel Problem Solv
+ing from Nature 2, 1992, pp. 137–144.
+[3] Ghosh, A., Tsutsui, S., Tanaka, H., and Corne, D. Genetic algorithms with substitution and
+re-entry of individuals. International Journal of Knowledge-Based Intelligent Engineering
+Systems 4, no. 1 (2000): 64–71.
 
 ```text
 
