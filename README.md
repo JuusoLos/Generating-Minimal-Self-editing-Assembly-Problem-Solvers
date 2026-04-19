@@ -1,17 +1,16 @@
-“Generating Minimal Self-editing Assembly Problem Solvers” Juuso Lösönen. 18.04.2026.
+## Generating minimal self-editing x86 assembly problem solvers
+## Juuso Lösönen
+## Code and dataset posted on this public Github repository on 18.04.2026.
 
-## Abstract
 
-We present a minimal implementation of an x86 assembly program that edits itself to
+A minimal implementation of an x86 assembly program that edits itself to
 solve a problem. In the implementation, a mutable instruction block restricted to mov
-instructions reads and modifies a memory state and calls a fixed append routine that adds a
-new instruction to the end of the mutable instruction block. Using evolutionary search, we
+instructions reads and modifies a memory state and calls a fixed append routine at the end
+of every generation. The fixed append routine selects operands based on the memory tape and adds a
+new mov instruction to the end of the mutable instruction block. Using evolutionary search, we
 generate a dataset of initial instruction-block and memory-state configurations that solve a
 simple conditional selection task: copying one of two data values to the output depending
-on a binary input. The implementation together with evolutionary search serves as a proof
-of concept that such programs can be automatically generated. We use the term mössö to
-refer to self-editing assembly-level problem-solver programs whose structure is intended to
-support automatic generation.
+on an input that's either 0 or 1.
 
 
 
