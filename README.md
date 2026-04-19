@@ -6,7 +6,7 @@ Code and dataset posted on this public Github repository on 18.04.2026.
 
 
 A minimal implementation of an x86 assembly program that edits itself to
-solve a problem. In the implementation, a mutable instruction block restricted to mov
+solve a toy problem. In the implementation, a mutable instruction block restricted to mov
 instructions reads and modifies a memory state and calls a fixed append routine at the end
 of every generation. The fixed append routine selects operands based on the memory tape and adds a
 new mov instruction to the end of the mutable instruction block. Using evolutionary search, we
