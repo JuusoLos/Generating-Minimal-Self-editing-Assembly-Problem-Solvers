@@ -12,7 +12,7 @@ of every generation. The fixed append routine selects operands based on the memo
 new mov instruction to the end of the mutable instruction block. Using evolutionary search, we
 generate a dataset of initial instruction-block and memory-state configurations that solve a
 simple conditional selection task: copying one of two data values to the output depending
-on an input that's either 0 or 1. I call the generated programs mössö.
+on an input that's either 0 or 1. I call the generated self-editing assembly programs mössö.
 
 In future work, mössö maybe could be scaled by training larger ML models on generated mössö program-data
 to generate more capable mössö, because ML systems often benefit from simpler training cases first.
